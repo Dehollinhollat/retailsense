@@ -116,7 +116,6 @@ Restitution décideur avec 5 visuels interactifs.
 | Git | Versioning |
 
 ---
-
 ## 📂 Structure du repo
 
 retailsense/
@@ -136,7 +135,6 @@ retailsense/
 └── README.md
 
 ---
-
 ## 💡 Insights clés
 
 - **55% des clients sont perdus ou à risque** — opportunité de rétention massive
