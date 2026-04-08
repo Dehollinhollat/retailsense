@@ -120,20 +120,26 @@ Restitution décideur avec 5 visuels interactifs.
 
 ```
 retailsense/
+│
 ├── data/
 │   ├── sample_data.csv                  ← Clients RFM segmentés (4 338 clients)
 │   ├── segments.csv                     ← Analyse par segment
 │   └── top_pays.csv                     ← CA par pays (Top 10)
+│
 ├── notebooks/
 │   └── exploration.ipynb                ← Analyse complète Python + SQL
+│
 ├── dashboard/
 │   └── RetailSense_Dashboard.pbix       ← Dashboard Power BI (à ouvrir avec Power BI Desktop)
+│
 ├── docs/
 │   ├── segmentation_rfm.png             ← Graphique segments
 │   ├── analyse_rfm.png                  ← Dashboard RFM 4 visuels
 │   ├── importance_variables.png         ← Variables prédictives churn
-│   └── dashboard_powerbi.png            ← Capture dashboard Power BI
-└── README.md
+│   ├── dashboard_powerbi.png            ← Capture dashboard Power BI
+│   └── méthodologie.md                  ← Approche projet, phases, décisions techniques
+│
+└── README.md                            ← Documentation pro + architecture + screenshots
 ```
 
 ---
