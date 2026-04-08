@@ -118,6 +118,7 @@ Restitution décideur avec 5 visuels interactifs.
 ---
 ## 📂 Structure du repo
 
+```
 retailsense/
 ├── data/
 │   ├── sample_data.csv                  ← Clients RFM segmentés (4 338 clients)
@@ -133,6 +134,7 @@ retailsense/
 │   ├── importance_variables.png         ← Variables prédictives churn
 │   └── dashboard_powerbi.png            ← Capture dashboard Power BI
 └── README.md
+```
 
 ---
 ## 💡 Insights clés
