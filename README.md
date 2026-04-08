@@ -145,6 +145,7 @@ retailsense/
 - **Le UK représente 94% du CA total** — concentration géographique risquée
 - **La Récence est le signal le plus fort du churn** (36%) — un client qui n'achète plus est le premier signe d'alerte
 
+
 ---
 
 ## 👤 Auteur
