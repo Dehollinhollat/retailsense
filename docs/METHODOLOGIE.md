@@ -42,8 +42,10 @@ les 3 métriques RFM.
 ## 5. Modèle Machine Learning
 
 ### Pourquoi Random Forest ?
-- Robuste aux outliers (ex: client 12346 avec 77 183£)
-- Pas besoin de normalisation des données
+- Robuste aux outliers (ex: client 12346 avec 77 183£) 
+- Pas besoin de normalisation des données. Les données ne sont pas linéaires, La régression logistique suppose une
+relation linéaire entre les variables et le churn. Dans mon dataset, un client avec une récence de 30 jours n'a pas exactement
+deux fois moins de risque qu'un client à 60 jours. La relation est plus complexe et non-linéaire.
 - Fournit une importance des variables interprétable
 - Excellentes performances sans tuning complexe
 
