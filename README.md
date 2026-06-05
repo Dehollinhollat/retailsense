@@ -1,11 +1,11 @@
-# 🔵 RetailSense — Analyse Churn & Segmentation Client E-commerce
+# RetailSense - Analyse Churn & Segmentation Client E-commerce
 
 > Projet personnel réalisé dans le cadre d'une formation MBA Big Data & IA  
 > pour développer des compétences concrètes en analyse de données et Machine Learning.
 
 ---
 
-## 📌 Problématique
+## Problématique
 
 Dans le secteur e-commerce, **acquérir un nouveau client coûte 5 à 7 fois plus cher**
 que d'en fidéliser un existant. Pourtant, la majorité des enseignes ne disposent pas
@@ -15,16 +15,16 @@ RetailSense répond à cette problématique en analysant le comportement d'achat
 de **4 338 clients réels** sur 1 an, en les segmentant par valeur business,
 et en prédisant leur risque de churn avec un modèle Machine Learning.
 
-**🎯 Résultat : 96% de précision sur la prédiction du churn.**
+** Résultat : 96% de précision sur la prédiction du churn.**
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Caractéristique | Détail |
 |---|---|
-| Source | Online Retail II — UCI Machine Learning Repository (Kaggle) |
-| Période | Décembre 2010 — Décembre 2011 |
+| Source | Online Retail II - UCI Machine Learning Repository (Kaggle) |
+| Période | Décembre 2010 - Décembre 2011 |
 | Volume brut | 541 910 transactions |
 | Volume nettoyé | 397 885 transactions exploitables |
 | Clients uniques | 4 338 |
@@ -32,15 +32,15 @@ et en prédisant leur risque de churn avec un modèle Machine Learning.
 
 ---
 
-## 🔍 Méthodologie
+## Méthodologie
 
-### Étape 1 — Nettoyage des données
+### Étape 1 - Nettoyage des données
 - Suppression des 135 080 lignes sans `Customer ID`
 - Suppression des retours (`Quantity < 0`) et annulations (`Invoice` commençant par "C")
 - Suppression des prix nuls ou négatifs
 - Création de la colonne `TotalPrice = Quantity × Price`
 
-### Étape 2 — Segmentation RFM
+### Étape 2 - Segmentation RFM
 Calcul de 3 métriques clés par client :
 
 | Métrique | Définition |
@@ -58,7 +58,7 @@ Résultats de la segmentation :
 | ⚠️ À risque | 1 092 | 25% | 816£ | 85 jours |
 | 🔴 Perdu | 1 307 | 30% | 280£ | 191 jours |
 
-### Étape 3 — Modèle de prédiction du churn
+### Étape 3 - Modèle de prédiction du churn
 
 - **Algorithme** : Random Forest (100 arbres)
 - **Split** : 80% entraînement / 20% test
@@ -77,18 +77,18 @@ Résultats de la segmentation :
 | Montant | 33.7% |
 | Fréquence | 30.5% |
 
-### Étape 4 — Analyse SQL
+### Étape 4 - Analyse SQL
 Requêtes analytiques sur SQLite pour identifier :
 - Top 10 pays par chiffre d'affaires
 - Comportement moyen par segment
 - Clients à risque haute valeur (montant > 1 000£)
 
-### Étape 5 — Dashboard Power BI
+### Étape 5 - Dashboard Power BI
 Restitution décideur avec 5 visuels interactifs.
 
 ---
 
-## 🖼️ Aperçu
+## Aperçu
 
 ### Segmentation RFM
 ![Segmentation RFM](docs/segmentation_rfm.png)
@@ -104,7 +104,7 @@ Restitution décideur avec 5 visuels interactifs.
 
 ---
 
-## 🛠️ Stack technique
+## Stack technique
 
 | Outil | Rôle |
 |---|---|
@@ -116,7 +116,7 @@ Restitution décideur avec 5 visuels interactifs.
 | Git | Versioning |
 
 ---
-## 📂 Structure du repo
+## Structure du repo
 
 ```
 retailsense/
@@ -143,17 +143,17 @@ retailsense/
 ```
 
 ---
-## 💡 Insights clés
+## Insights clés
 
-- **55% des clients sont perdus ou à risque** — opportunité de rétention massive
+- **55% des clients sont perdus ou à risque** - opportunité de rétention massive
 - **Les Champions dépensent 24x plus que les Perdus** (6 705£ vs 280£)
-- **Le client 12346 est le cas le plus critique** — 77 183£ de CA historique mais inactif depuis 325 jours
-- **Le UK représente 94% du CA total** — concentration géographique risquée
-- **La Récence est le signal le plus fort du churn** (36%) — un client qui n'achète plus est le premier signe d'alerte
+- **Le client 12346 est le cas le plus critique** - 77 183£ de CA historique mais inactif depuis 325 jours
+- **Le UK représente 94% du CA total** - concentration géographique risquée
+- **La Récence est le signal le plus fort du churn** (36%) - un client qui n'achète plus est le premier signe d'alerte
 
 
 ---
 
-## 👤 Auteur
+## Auteur
 
-**Déhollin HOLLAT** — Chef de Projet Data IA  
+**Déhollin HOLLAT** - Chef de Projet Data IA  
